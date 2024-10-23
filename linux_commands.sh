@@ -55,3 +55,5 @@ find /abc/def/ -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u
 systemctl list-units --type=service | egrep 'myservice|abc'
 
 
+# to check current permission of a file 
+stat -c "%a" filename
